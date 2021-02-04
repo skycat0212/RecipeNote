@@ -16,7 +16,34 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4X-Sr-bI0">
+                    <rect key="frame" x="0.0" y="64" width="414" height="60"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tE1-Yd-gq4">
+                    <rect key="frame" x="20" y="144" width="374" height="718"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zoq-1G-dAy">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="T4X-Sr-bI0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="3wb-hq-mw5"/>
+                <constraint firstItem="T4X-Sr-bI0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7lG-8a-rh7"/>
+                <constraint firstItem="tE1-Yd-gq4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7ub-tr-NBT"/>
+                <constraint firstItem="tE1-Yd-gq4" firstAttribute="top" secondItem="T4X-Sr-bI0" secondAttribute="bottom" constant="20" id="7za-Od-bMb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tE1-Yd-gq4" secondAttribute="bottom" id="Amf-vg-Z9y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tE1-Yd-gq4" secondAttribute="trailing" constant="20" id="qYl-60-dJR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T4X-Sr-bI0" secondAttribute="trailing" id="tcr-64-VqT"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="154"/>
         </view>

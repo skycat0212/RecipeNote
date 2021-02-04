@@ -15,6 +15,8 @@
 		3BACE75B25CBF0AA00D90368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BACE75925CBF0AA00D90368 /* LaunchScreen.storyboard */; };
 		3BACE76525CBF33100D90368 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACE76325CBF33100D90368 /* MainViewController.swift */; };
 		3BACE76625CBF33100D90368 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BACE76425CBF33100D90368 /* MainViewController.xib */; };
+		3BACE76925CBFB5B00D90368 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACE76725CBFB5B00D90368 /* RecipeCollectionViewCell.swift */; };
+		3BACE76A25CBFB5B00D90368 /* RecipeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BACE76825CBFB5B00D90368 /* RecipeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3BACE75C25CBF0AA00D90368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BACE76325CBF33100D90368 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3BACE76425CBF33100D90368 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3BACE76725CBFB5B00D90368 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BACE76825CBFB5B00D90368 /* RecipeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				3BACE76325CBF33100D90368 /* MainViewController.swift */,
 				3BACE76425CBF33100D90368 /* MainViewController.xib */,
+				3BACE76725CBFB5B00D90368 /* RecipeCollectionViewCell.swift */,
+				3BACE76825CBFB5B00D90368 /* RecipeCollectionViewCell.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -139,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BACE76A25CBFB5B00D90368 /* RecipeCollectionViewCell.xib in Resources */,
 				3BACE75B25CBF0AA00D90368 /* LaunchScreen.storyboard in Resources */,
 				3BACE75825CBF0AA00D90368 /* Assets.xcassets in Resources */,
 				3BACE75625CBF0A900D90368 /* Main.storyboard in Resources */,
@@ -155,6 +162,7 @@
 			files = (
 				3BACE75325CBF0A900D90368 /* ViewController.swift in Sources */,
 				3BACE74F25CBF0A900D90368 /* AppDelegate.swift in Sources */,
+				3BACE76925CBFB5B00D90368 /* RecipeCollectionViewCell.swift in Sources */,
 				3BACE75125CBF0A900D90368 /* SceneDelegate.swift in Sources */,
 				3BACE76525CBF33100D90368 /* MainViewController.swift in Sources */,
 			);
