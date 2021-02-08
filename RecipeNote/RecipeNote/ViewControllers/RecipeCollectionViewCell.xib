@@ -1,21 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecipeCollectionViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recipeCell" id="gTV-IL-0wX" customClass="RecipeCollectionViewCell" customModule="RecipeNote" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="150" verticalHuggingPriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="Kbp-Sn-15d">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Kbp-Sn-15d" secondAttribute="height" multiplier="1:1" id="XSE-cP-na2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXd-QQ-sR1">
+                        <rect key="frame" x="0.0" y="150" width="150" height="75"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZXd-QQ-sR1" secondAttribute="height" multiplier="2:1" id="to4-Xb-tTb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="Kbp-Sn-15d" firstAttribute="trailing" secondItem="ZXd-QQ-sR1" secondAttribute="trailing" id="FXV-ch-Z1y"/>
+                <constraint firstItem="Kbp-Sn-15d" firstAttribute="leading" secondItem="ZXd-QQ-sR1" secondAttribute="leading" id="I57-pR-EfD"/>
+                <constraint firstItem="Kbp-Sn-15d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IzN-6F-hLv"/>
+                <constraint firstItem="Kbp-Sn-15d" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gwZ-1z-g7s"/>
+                <constraint firstItem="ZXd-QQ-sR1" firstAttribute="top" secondItem="Kbp-Sn-15d" secondAttribute="bottom" id="ugg-zX-cqH"/>
+                <constraint firstItem="Kbp-Sn-15d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="z5e-7Q-H2A"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="178" height="212"/>
+            <connections>
+                <outlet property="foodImg" destination="Kbp-Sn-15d" id="cIM-Xo-UNo"/>
+                <outlet property="foodName" destination="ZXd-QQ-sR1" id="N6c-OP-45h"/>
+            </connections>
+            <point key="canvasLocation" x="230.43478260869566" y="207.25446428571428"/>
         </collectionViewCell>
     </objects>
 </document>
