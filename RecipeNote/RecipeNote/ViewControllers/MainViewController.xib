@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="RecipeNote" customModuleProvider="target">
             <connections>
+                <outlet property="addRecipeBtn" destination="ApS-e2-wQ2" id="Zw7-YW-Rn4"/>
                 <outlet property="recipeCollectionView" destination="tE1-Yd-gq4" id="dF1-RN-uNz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,13 +28,47 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tE1-Yd-gq4">
                     <rect key="frame" x="20" y="144" width="374" height="698"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zoq-1G-dAy">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zoq-1G-dAy">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxK-fZ-9oV" userLabel="FloatingBtn">
+                    <rect key="frame" x="324" y="772" width="70" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srV-CS-gD4">
+                            <rect key="frame" x="0.0" y="0.5" width="70" height="69"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="9vm-B0-phw"/>
+                                <constraint firstAttribute="width" constant="70" id="OHa-Tz-2oq"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" backgroundImage="circle.fill" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApS-e2-wQ2">
+                            <rect key="frame" x="0.0" y="0.5" width="70" height="69"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="Ryg-p3-UA2"/>
+                                <constraint firstAttribute="width" constant="70" id="nVY-0A-eXT"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" backgroundImage="plus.circle.fill" catalog="system"/>
+                            <connections>
+                                <action selector="addRecipeBtnClicked:" destination="-1" eventType="touchUpInside" id="HYY-gQ-S1w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="srV-CS-gD4" secondAttribute="trailing" id="0kO-zW-fPb"/>
+                        <constraint firstAttribute="width" constant="70" id="8DO-7g-DF1"/>
+                        <constraint firstAttribute="bottom" secondItem="ApS-e2-wQ2" secondAttribute="bottom" id="VkX-Q4-6sY"/>
+                        <constraint firstAttribute="trailing" secondItem="ApS-e2-wQ2" secondAttribute="trailing" id="h5G-TM-uFj"/>
+                        <constraint firstAttribute="height" constant="70" id="jQX-P4-HdN"/>
+                        <constraint firstAttribute="bottom" secondItem="srV-CS-gD4" secondAttribute="bottom" id="rjh-ax-C0B"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -42,6 +77,8 @@
                 <constraint firstItem="tE1-Yd-gq4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7ub-tr-NBT"/>
                 <constraint firstItem="tE1-Yd-gq4" firstAttribute="top" secondItem="T4X-Sr-bI0" secondAttribute="bottom" constant="20" id="7za-Od-bMb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tE1-Yd-gq4" secondAttribute="bottom" constant="20" id="Amf-vg-Z9y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CxK-fZ-9oV" secondAttribute="trailing" constant="20" id="FRc-RD-Des"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CxK-fZ-9oV" secondAttribute="bottom" constant="20" id="hYQ-h5-9BG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tE1-Yd-gq4" secondAttribute="trailing" constant="20" id="qYl-60-dJR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T4X-Sr-bI0" secondAttribute="trailing" id="tcr-64-VqT"/>
             </constraints>
@@ -49,4 +86,8 @@
             <point key="canvasLocation" x="139" y="154"/>
         </view>
     </objects>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

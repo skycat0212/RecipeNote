@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B4CF59D25F08996003D97A7 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CF59B25F08996003D97A7 /* AddRecipeViewController.swift */; };
+		3B4CF59E25F08996003D97A7 /* AddRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4CF59C25F08996003D97A7 /* AddRecipeViewController.xib */; };
 		3BACE74F25CBF0A900D90368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACE74E25CBF0A900D90368 /* AppDelegate.swift */; };
 		3BACE75125CBF0A900D90368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACE75025CBF0A900D90368 /* SceneDelegate.swift */; };
 		3BACE75325CBF0A900D90368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACE75225CBF0A900D90368 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B4CF59B25F08996003D97A7 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
+		3B4CF59C25F08996003D97A7 /* AddRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecipeViewController.xib; sourceTree = "<group>"; };
 		3BACE74B25CBF0A900D90368 /* RecipeNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BACE74E25CBF0A900D90368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BACE75025CBF0A900D90368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				3BACE76425CBF33100D90368 /* MainViewController.xib */,
 				3BACE76725CBFB5B00D90368 /* RecipeCollectionViewCell.swift */,
 				3BACE76825CBFB5B00D90368 /* RecipeCollectionViewCell.xib */,
+				3B4CF59B25F08996003D97A7 /* AddRecipeViewController.swift */,
+				3B4CF59C25F08996003D97A7 /* AddRecipeViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 			files = (
 				3BACE76A25CBFB5B00D90368 /* RecipeCollectionViewCell.xib in Resources */,
 				3BACE75B25CBF0AA00D90368 /* LaunchScreen.storyboard in Resources */,
+				3B4CF59E25F08996003D97A7 /* AddRecipeViewController.xib in Resources */,
 				3BACE75825CBF0AA00D90368 /* Assets.xcassets in Resources */,
 				3BACE75625CBF0A900D90368 /* Main.storyboard in Resources */,
 				3BACE76625CBF33100D90368 /* MainViewController.xib in Resources */,
@@ -160,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4CF59D25F08996003D97A7 /* AddRecipeViewController.swift in Sources */,
 				3BACE75325CBF0A900D90368 /* ViewController.swift in Sources */,
 				3BACE74F25CBF0A900D90368 /* AppDelegate.swift in Sources */,
 				3BACE76925CBFB5B00D90368 /* RecipeCollectionViewCell.swift in Sources */,
