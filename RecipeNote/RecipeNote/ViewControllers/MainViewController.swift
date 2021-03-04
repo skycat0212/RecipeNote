@@ -43,7 +43,11 @@ class MainViewController: UIViewController {
     */
 
     @IBAction func addRecipeBtnClicked(_ sender: Any) {
-        
+        let vc = AddRecipeViewController(
+            nibName: "AddRecipeViewController", bundle: Bundle.main
+        )
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
         
     }
     
