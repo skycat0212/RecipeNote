@@ -10,10 +10,17 @@ import UIKit
 
 class AddRecipeViewController: UIViewController {
 
+    @IBOutlet weak var foodTitle: UITextField!
+    var foodTitleUnderline: CALayer! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        setTitleUI()
     }
 
 
@@ -27,4 +34,18 @@ class AddRecipeViewController: UIViewController {
     }
     */
 
+    func setTitleUI() {
+        foodTitle.borderStyle = .none
+//        border = CALayer()
+        if foodTitleUnderline != nil {
+            return
+        }
+        foodTitleUnderline = CALayer()
+        foodTitleUnderline!.frame = CGRect(x: 0, y: foodTitle.frame.size.height-1, width: foodTitle.frame.width, height: 1)
+        foodTitleUnderline!.backgroundColor = UIColor.darkGray.cgColor
+        foodTitle.layer.addSublayer(foodTitleUnderline!)
+        foodTitle.textAlignment = .center
+        foodTitle.textColor = UIColor.darkGray
+    }
+    
 }
