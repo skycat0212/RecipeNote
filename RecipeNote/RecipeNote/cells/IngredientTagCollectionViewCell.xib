@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="IngredientTagCollectionViewCell" customModule="RecipeNote" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="25"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="108" height="25"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4o-sq-KVN">
+                        <rect key="frame" x="0.0" y="0.0" width="108" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSL-dD-sBH">
+                                <rect key="frame" x="10" y="2" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pC-MF-4us">
+                                <rect key="frame" x="78" y="2.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="VPT-tp-QeV"/>
+                                    <constraint firstAttribute="height" constant="21" id="hxv-XE-JsY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="xmark.circle" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nSL-dD-sBH" firstAttribute="centerY" secondItem="x4o-sq-KVN" secondAttribute="centerY" id="3yL-ae-dzw"/>
+                            <constraint firstItem="nSL-dD-sBH" firstAttribute="leading" secondItem="x4o-sq-KVN" secondAttribute="leading" constant="10" id="ToV-YE-bHr"/>
+                            <constraint firstAttribute="trailing" secondItem="6pC-MF-4us" secondAttribute="trailing" constant="10" id="mXi-2g-VwG"/>
+                            <constraint firstItem="6pC-MF-4us" firstAttribute="centerY" secondItem="x4o-sq-KVN" secondAttribute="centerY" id="p8z-Jc-gVs"/>
+                            <constraint firstItem="6pC-MF-4us" firstAttribute="leading" secondItem="nSL-dD-sBH" secondAttribute="trailing" constant="10" id="wxE-9b-HaV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="x4o-sq-KVN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DEr-aS-zLl"/>
+                <constraint firstItem="x4o-sq-KVN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Drw-mL-wjX"/>
+                <constraint firstAttribute="trailing" secondItem="x4o-sq-KVN" secondAttribute="trailing" id="Sxy-CB-FBE"/>
+                <constraint firstAttribute="bottom" secondItem="x4o-sq-KVN" secondAttribute="bottom" id="ytc-fm-ZLN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="108" height="25"/>
+            <point key="canvasLocation" x="182.60869565217394" y="144.97767857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

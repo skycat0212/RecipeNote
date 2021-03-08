@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1640B825F6173000116747 /* IngredientTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1640B625F6173000116747 /* IngredientTagCollectionViewCell.swift */; };
+		3B1640B925F6173000116747 /* IngredientTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1640B725F6173000116747 /* IngredientTagCollectionViewCell.xib */; };
 		3B4CF59D25F08996003D97A7 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CF59B25F08996003D97A7 /* AddRecipeViewController.swift */; };
 		3B4CF59E25F08996003D97A7 /* AddRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4CF59C25F08996003D97A7 /* AddRecipeViewController.xib */; };
 		3BACE74F25CBF0A900D90368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACE74E25CBF0A900D90368 /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B1640B625F6173000116747 /* IngredientTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTagCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B1640B725F6173000116747 /* IngredientTagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientTagCollectionViewCell.xib; sourceTree = "<group>"; };
 		3B4CF59B25F08996003D97A7 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 		3B4CF59C25F08996003D97A7 /* AddRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecipeViewController.xib; sourceTree = "<group>"; };
 		3BACE74B25CBF0A900D90368 /* RecipeNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1640B325F6169800116747 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				3B1640B625F6173000116747 /* IngredientTagCollectionViewCell.swift */,
+				3B1640B725F6173000116747 /* IngredientTagCollectionViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		3BACE74225CBF0A900D90368 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				3BACE76225CBF2F800D90368 /* ViewControllers */,
+				3B1640B325F6169800116747 /* cells */,
 				3BACE74E25CBF0A900D90368 /* AppDelegate.swift */,
 				3BACE75025CBF0A900D90368 /* SceneDelegate.swift */,
 				3BACE75225CBF0A900D90368 /* ViewController.swift */,
@@ -153,6 +167,7 @@
 			files = (
 				3BACE76A25CBFB5B00D90368 /* RecipeCollectionViewCell.xib in Resources */,
 				3BACE75B25CBF0AA00D90368 /* LaunchScreen.storyboard in Resources */,
+				3B1640B925F6173000116747 /* IngredientTagCollectionViewCell.xib in Resources */,
 				3B4CF59E25F08996003D97A7 /* AddRecipeViewController.xib in Resources */,
 				3BACE75825CBF0AA00D90368 /* Assets.xcassets in Resources */,
 				3BACE75625CBF0A900D90368 /* Main.storyboard in Resources */,
@@ -167,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1640B825F6173000116747 /* IngredientTagCollectionViewCell.swift in Sources */,
 				3B4CF59D25F08996003D97A7 /* AddRecipeViewController.swift in Sources */,
 				3BACE75325CBF0A900D90368 /* ViewController.swift in Sources */,
 				3BACE74F25CBF0A900D90368 /* AppDelegate.swift in Sources */,
